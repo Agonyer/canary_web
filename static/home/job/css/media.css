@@ -1,0 +1,131 @@
+/* 文化 */
+
+
+@media screen and (max-width:1440px) {
+
+    .banimg{ width: 100%; height: 500px; object-fit: cover;}
+    .joinBanner h1 img{ height: 80px;}
+}
+
+@media screen and (max-width:1200px) {
+
+    .joinBanner .container{ margin-left: 0; left: 30px;}
+    .joinBanner .container h1{ font-size: 45px;} 
+    .join-box5 .xzlc li .txt span:last-child{ font-size: 16px;}
+
+    .join-box4 ul li .txt{ font-size: 16px;}
+
+    .banimg{ width: 100%; height: 400px; object-fit: cover;}
+    .joinBanner h1 img{ height: 65px;}
+} 
+
+@media screen and (max-width:1000px) {
+
+    .joinBanner .container h1{ font-size: 35px;} 
+    .join-box4 ul{    grid-template-columns: repeat(3,1fr);}
+    .join-box4 ul li .txt{ padding: 15px;}
+    .join-box5 .tit{ font-size:18px;}
+    header nav{ display: none;}
+
+    .loginbtn{ margin-left: 20px;}
+    .bot-nav { width: 100%; position: fixed; bottom: 0; left: 0; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); height: 50px; display: flex; }
+    .bot-nav a{ flex: 1; text-align: center; display: block; height: 50px; line-height: 50px;}
+    .bot-nav a.on{ background: #0545a7; color: #fff; font-weight: bold;}
+
+    .tabbox{ width:90%; }
+    .banimg{ width: 100%; height: 300px; object-fit: cover;}
+    .joinBanner h1 img{ height:45px;}
+    .joinBanner .container h1{    margin-bottom: 20px;}
+}
+
+
+
+@media screen and (max-width:750px) {
+    .tabs{ height: auto; margin: 25px 0;}
+    .tabs a{ flex-direction: column; margin: 0; width: 25%;  height: auto;}
+    .tabs a span{ padding: 10px 0 ; font-size: 14px;}
+    .join-box4{ padding: 25px 0;}
+    .join-box4 ul{ margin-top: 25px;  grid-template-columns: repeat(2,1fr);    grid-gap: 20px 20px;}
+    .join-box4 ul li .txt{ width: auto; font-size: 14px; line-height: 1.5;}
+    .Recruitmentbox{ margin-top: 25px; flex-direction: column;}
+    .Recruitmentbox .left{ width: 100%; margin-bottom: 25px; padding: 25px 0; flex-direction: row; align-items: center;} 
+    .Recruitmentbox .left h2{ margin: 0 0 15px 0;}
+    .Recruitmentbox .left img{ margin-right: 20px;}
+    .Recruitmentbox .right{ width: 100%;}
+    .Recruitmentbox .right ul li{ margin-bottom: 25px;}
+    .Recruitmentbox .right ul li h2{ padding-left: 10px;}
+    .Recruitmentbox .right ul li a{ padding-left: 10px;}
+    .join-box5 .tit{ margin: 25px 0;}
+    .join-box5 .xzgw li{ width: 33.3%; }
+    .join-box5 .xzgw li:nth-child(1),   .join-box5 .xzgw li:nth-child(3){ width: 50%;}
+    .join-box5 .xzgw li:nth-child(2n){ display: none;}
+    .join-box5 .xzlc li::after{ display: none;}
+    .join-box5 .xzlc li .img{ display: none;}
+    .join-box5 .xzlc{     flex-direction: row;
+        background: none;
+        flex-wrap: wrap;
+        padding: 0;}
+    .join-box5 .xzlc li {padding: 0 !important;
+   
+        flex: 46% 1;
+        margin: 0 2% 15px 2%;}
+    .join-box5{ padding: 25px 0;}
+    .banimg{ width: 100%; height: 240px; object-fit: cover;}
+    .joinBanner .container{ left: 0; margin-left: 0;}
+    .joinBanner .container h1{ font-size: 30px;  margin: 25px 0;}
+    .joinBanner .bannerlink a{ width: 100px; height: 34px;  background-size: cover; font-size: 16px;}
+
+}
+
+
+/*  招聘内页 */
+ 
+
+@media screen and (min-width: 992px){
+    .main-right-bot .tit span:last-child{ letter-spacing: 2px;}
+
+    
+}
+@media screen and (max-width:768px) {
+
+    body{ font-size: 14px !important;}
+    .main{ flex-direction: column;}
+    .main-left { width: 100%;}
+    .main-left .clear20{ height: 0;}
+    .main-right { width: 100%; margin-top: 15px;}
+    .header, header .layui-container{ height: 60px;}
+    .logo img{ height: 28px;}
+    .main-left .ewm{ display: none;}
+    .main-right-top{ padding: 15px}
+    .main-right-top .layui-input-inline{ width: 45%; margin-right: 2%;}
+    .main-right-bot{ padding: 15px;}
+    .lsit-table{ margin-top: 15px;}
+    .main-right-bot .tit span:last-child{ letter-spacing: 0;}
+    .lsit-table dt span, .lsit-table  dd a span{ width: 25%;}
+    .lsit-table dd a span:first-child,.lsit-table dt span:first-child{width: calc(50% - 24px);}
+    .lsit-table dt span:last-child, .lsit-table dd a span:last-child{ display: none;}
+    .lsit-table dt span:nth-child(4),.lsit-table dd a span:nth-child(4){ display: none;}
+    footer{ padding-bottom: 55px;}
+
+    .main-top,.main-bot{ padding: 15px;}
+    .main-top .tit{ font-size: 18px;}
+
+    .shoucang{ position: relative; right: 0; bottom: 0; margin-top: 10px;}
+    .topDate .right .ewm{ padding: 5px;}
+    .main-bot .tit{ font-size: 16px;}
+    .main-bot .tit span{ padding-right: 12px;}
+    .main-bot .con{ margin: 12px 0;}
+    .main-bot-ul{ flex-direction: column;     align-items: flex-start;}
+    .main-bot-ul li span:first-child{ width: auto; text-align: left; }
+    .main-btn{ padding: 10px 0;}
+    .main-btn a{ margin: 5px 15px;}
+   
+    
+    .tabbox{ width:90%;overflow-y: scroll; height: 90vh;}
+    .tabbox .tit{ font-size: 18px;padding: 0 20px;
+        height: 40px;}
+        .tabbox .con{ padding: 20px; flex-direction: column;}
+        .tabbox .con .left{ width: 100%;}
+        .tabbox .con .txt{ margin-top: 8px;}
+        .uplodad{ padding: 20px;}
+}

@@ -1,0 +1,97 @@
+.clearfix:after {content: "";display: block;clear: both;width: 100%;height: 0;line-height: 0;font-size: 0;}
+ 
+.dis-flex {  display: flex;}
+.dis-flex-center {display: flex;align-items: center;}
+.dis-flex-between-center { display: flex; align-items: center;justify-content: space-between;}
+.dis-flex-between{ display: flex;justify-content: space-between;}
+.dis-flex-center-center {display: flex;justify-content: center;align-items: center;}
+.flex-column{flex-direction: column;}
+
+
+.joinBanner .container{ display: flex; height: 100%; justify-content:center; position: absolute; top: 0; left: 50%; margin-left: -600px;}
+.joinBanner .container h1{ font-size: 60px; color: #fff; margin-bottom: 50px; font-weight: bold;}
+.joinBanner .bannerlink a { display: inline-flex; width: 147px; height: 50px; background:url(../pic/bannerlink.png) no-repeat center center; font-size: 18px; color: #29f3ff; margin-right: 30px; transition: all .36s;}
+.joinBanner .bannerlink a:hover{ transform: translateY(5px);}
+
+
+#tabs-container  img{max-width: 100%;}
+.tabs {border-bottom: 1px solid #eee;width:100%;
+	height:62px;
+	overflow:hidden;
+	 display: flex; align-items: center; justify-content: center;
+	  margin : 50px 0;
+}
+.tabs a {
+ 
+ 
+	width:120px;
+	height:62px;
+	display: flex; justify-content: space-between; align-items: center; font-size: 18px; margin:  0 30px;
+ 
+	border-bottom:2px solid #eee;
+}
+.tabs a.active {
+	border-bottom:2px solid #0545a7;
+	 
+	color:#0545a7;
+}
+.join-box4{ background: #f5f5f5;padding: 70px 0;}
+
+.join-box4 ul {display: grid; grid-gap:40px 20px; grid-template-columns: repeat(4,1fr); margin-top: 50px;}
+.join-box4 ul li { background: #fff; display: flex; align-items:  center; flex-direction:column;  justify-content:space-between; position: relative; transition: all .3s;}
+.join-box4 ul li .txt{ width: 200px; font-size: 18px; color: #595757; line-height: 27px; padding: 20px 0;} 
+.join-box4 ul li span{ width: 0; height: 2px; background: #0545a7; position: absolute; top: 0; left: 0;  transition: all .3s;}
+.join-box4 ul li .img{ position: relative;}
+.join-box4 ul li .img em{ width: 100%; height: 100%; background: #000; opacity: 0.4; bottom: 0; right: 0; z-index: 2; position: absolute;transition: all .3s;}
+.join-box4 ul li img{ width: 100%; }
+.join-box4 ul li:hover em{   opacity: 0;}
+.join-box4 ul li:hover span{ width: 100%;}
+.join-box4 ul li:hover {transform: translateY(-10px); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+
+.Recruitmentbox { margin-top: 50px;}
+.Recruitmentbox .left{ border: 1px solid #eaeaea; width: 23%; transition: all .3s;}
+.Recruitmentbox .left h2{color: #595757; font-size: 18px; margin: 20px 0 15px ; font-weight: bold;}
+.Recruitmentbox .left  a{ color: #0545a7; transition: all .3s;}
+.Recruitmentbox .left:hover{box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-color: #fff;}
+.Recruitmentbox .left  a:hover{padding-left: 42px; font-weight: bold;}
+.Recruitmentbox .right{ width: 73%;}
+.Recruitmentbox .right ul li{border: 1px solid #eaeaea; float: left; padding: 20px 0; width: 47%; margin-right: 6%; margin-bottom: 40px; transition: all .3s;} 
+.Recruitmentbox .right ul li:nth-child(2n){ margin-right: 0;}
+.Recruitmentbox .right ul li:nth-child(n+2){ margin-bottom: 0;}
+.Recruitmentbox .right ul li h2{ border-left:3px solid #0545a7; color: #595757; font-size: 18px; margin-left: -2px; padding-left: 30px; font-weight: bold; margin-bottom: 25px;}
+.Recruitmentbox .right ul li h2 span{ font-size: 14px;}
+.Recruitmentbox .right ul li a{ padding-left: 30px; color: #0545a7;  transition: all .3s;}
+
+.Recruitmentbox .right ul li:hover{box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-color: #fff;}
+.Recruitmentbox .right ul li a:hover{ padding-left: 42px; font-weight: bold;}
+
+.join-box5{ background: #f5f5f5;padding: 70px 0;}
+.join-box5 .tit{ font-size: 28px; text-align: center; margin:55px 0 35px 0; color: #595757;}
+.join-box5  .xzgw{ display: flex; flex-wrap: wrap;}
+.join-box5  .xzgw li{ width: 20%; background: #fbfbfb;} 
+.join-box5  .xzgw li a{ background: #fff; display: flex; flex-direction: column; justify-content: center;  align-items: center; padding: 25px 0; transition: all .3s;}
+.join-box5  .xzgw li a h2{ font-size: 18px; margin:10px 0 5px 0; font-weight: bold;}
+.join-box5  .xzgw li a  p{ color: #8c8c8c;  }
+.join-box5  .xzgw li a:hover { transform: scale(1.05);box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.join-box5  .xzgw li a:hover p,.join-box5  .xzgw li a:hover h2{ color: #0545a7  ;}
+.join-box5  .xzlc{ background: url(../pic/xzlc-bg.jpg)  repeat-x center left; display: flex; margin-top:40px;}
+.join-box5  .xzlc li{ flex: 1; display: flex; flex-direction: column-reverse; align-items: center; padding-top:110px; position: relative;}
+.join-box5  .xzlc li:nth-child(2n){ padding-top: 0; padding-bottom: 110px; flex-direction: column;}
+.join-box5  .xzlc li .txt{ display: flex; width: 100%; transition:  all .3s;}
+.join-box5  .xzlc li .txt span{display: flex; align-items: center; justify-content: center;}
+.join-box5  .xzlc li .txt span:first-child{ width: 40px; height: 40px; background: #0545a7; color: #fff;font-family: DIN; font-size: 24px;  font-weight: bold; }
+.join-box5  .xzlc li .txt span:last-child{ width: calc(100% - 40px); color: #0545a7; font-size: 18px; font-weight: bold; border-top: 1px  #0545a7  dashed; border-right:  1px  #0545a7  dashed;
+ border-bottom:  1px  #0545a7  dashed;}
+ .join-box5  .xzlc li .img{  width: 17px; height: 47px; background: url(../pic/jiantou.png) no-repeat center top; margin: 12px 0;transform: rotateX(180deg); transition:  all .3s;} 
+ .join-box5  .xzlc li:nth-child(2n) .img{transform: rotateX(0); }
+ .join-box5  .xzlc li::after{ display: block; content: ''; width: 28px; height: 28px; border-radius: 50%; background: #dfe1e4; position: absolute; left: 50%; bottom: 50%;
+  margin-left: -14px; margin-bottom:-14px;  }
+
+  .join-box5  .xzlc li:first-child .txt span:first-child{ background: #fff; color: #0545a7;}
+  .join-box5  .xzlc li:first-child .txt span:last-child{ color: #fff; background: #0545a7;}
+  .join-box5  .xzlc li:hover  .img{  transform: scale(1,2)  ;  }
+  .join-box5  .xzlc li:nth-child(2n-1):hover  .img{transform: scale(1,2)  rotate(180deg)}
+  .join-box5  .xzlc li:hover  .txt{ transform: translateY(-20px);}
+  .join-box5  .xzlc li:nth-child(2n-1):hover  .txt{ transform: translateY(30px);}
+  .join-box5  .xzlc li:hover .txt span:last-child{ background: #dde3ed; color: #0545a7;}
+
