@@ -9,10 +9,10 @@ body, html { overflow-x: hidden; width: 100%; }
    font-family: "SourceHanSansSC-Regular";
    src: url("../fonts/SourceHanSansSC-Regular.woff") format("woff")
  }
-body, p, h1, h2, h3, h4, h5, table, ul, li, form, input { margin: 0; padding: 0; color: #000;  line-height: 1; }  
+/* body, p, h1, h2, h3, h4, h5, table, ul, li, form, input { margin: 0; padding: 0; color: #000;  line-height: 1; }  
 body, p { font-size: 14px; border: none; color: #000; }  
-a { font-size: 14px; color: #000; text-decoration: none; border: none; padding: 0; margin: 0; }  
-table { border-collapse: collapse; }  
+/* a { font-size: 14px; color: #000; text-decoration: none; border: none; padding: 0; margin: 0; }   */
+/* table { border-collapse: collapse; }  
 img { border: 0; margin: 0; padding: 0; display: block; }  
 ul, li { list-style: none; border: 0; margin: 0; padding: 0; } 
 dl, dt, dd { margin: 0; padding: 0; -webkit-margin-start: 0; }  
@@ -23,39 +23,39 @@ em, i, b { font-style: normal; }
 p { line-height: 170%; color: #555; font-size: 14px; }  
 input { border: none; background: none; }  
 figcaption { display: block; }  
-input:focus { outline: none; }  
-::-webkit-input-placeholder { /* WebKit browsers */ font-size: 14px; color: #555; }  
-::-ms-input-placeholder { /* Internet Explorer 10+ */ font-size:14px; color: #555; }  
+/* input:focus { outline: none; }  
+::-webkit-input-placeholder { WebKit browsers font-size: 14px; color: #555; }  
+::-ms-input-placeholder { Internet Explorer 10+ font-size:14px; color: #555; }
 
-.clearfix { *zoom: 1; }  
+/* .clearfix { *zoom: 1; }  
 .clearfix:before, .clearfix:after { display: table; line-height: 0; content: ""; }  
 .clearfix:after { clear: both; } 
 .clear { clear: both; }
 
 .fl{ float: left;}
 .fr{ float: right;}
- input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;} */ 
 
  
-.container{ max-width: 1200px; margin: 0 auto; width: 100%;}
+/* .container{ max-width: 1200px; margin: 0 auto; width: 100%;}
 
 .headerwrap{  position:absolute; left: 0; right: 0; top: 0; z-index: 333333;-moz-transition: all 0.3s;
 -webkit-transition: all 0.3s;
 -o-transition: all 0.3s;
 -ms-transition: all 0.3s;
-transition: all 0.3s;}
-.header{ display: flex; align-items: center;  justify-content: space-between;}
-.navbar{ display: flex;  justify-content: space-between;  flex-grow: 1; margin-left: 130px;}
-.navbar li{ /* position: relative; */ vertical-align: middle; display: inline-block; transition: all 0.36s;}
-.navbar li>a{ color: #fff; font-size: 16px; display: block; height: 70px; line-height: 70px; }
-.subnav{ position: absolute; top: 70px; left: 0; right: 0; background-color: #fff;	border-radius: 0px 0px 10px 10px; padding:50px 20%; 
-display: flex; justify-content: center; display: none; transition: all 0.36s; z-index: 33;}
-.subnav a,.subnav .thirdNavTitle{ display: block; color: #000; font-size: 16px; text-align: center; padding: 10px 0;  
-position: relative; z-index: 2; transition: all 0.36s;}
+transition: all 0.3s;} */
+/* .header{ display: flex; align-items: center;  justify-content: space-between;} */
+/* .navbar{ display: flex;  justify-content: space-between;  flex-grow: 1; margin-left: 130px; */
+/* .navbar li{ position: relative; vertical-align: middle; display: inline-block; transition: all 0.36s;} */
+/* .navbar li>a{ color: #fff; font-size: 16px; display: block; height: 70px; line-height: 70px; } */
+/* .subnav{ position: absolute; top: 70px; left: 0; right: 0; background-color: #fff;	border-radius: 0px 0px 10px 10px; padding:50px 20%;  */
+/* display: flex; justify-content: center; display: none; transition: all 0.36s; z-index: 33;} */
+/* .subnav a,.subnav .thirdNavTitle{ display: block; color: #000; font-size: 16px; text-align: center; padding: 10px 0;   */
+/* position: relative; z-index: 2; transition: all 0.36s;}
 .subnav .thirdNavTitle{ border-bottom: 1px solid #E0E0E0; text-align: left; color: #000; font-size: 16px; padding-bottom: 15px;
 margin-bottom: 20px;  font-weight: bold;}
-.subnav .thirdNavTitle::before{ content: ''; display: block; position: absolute;  top: 0; bottom: 0; z-index: -1;
-background: #fff; transition: all 1s; opacity: 0;  left: -15px; right: -15px;}
+.subnav .thirdNavTitle::before{ content: ''; display: block; position: absolute;  top: 0; bottom: 0; z-index: -1; */
+/* background: #fff; transition: all 1s; opacity: 0;  left: -15px; right: -15px;}
 .subnav .thirdNavTitle:hover::before{ opacity: 1;}
 .subnav .thirdNav a:hover{  color: #3953ba; }
 
@@ -63,16 +63,16 @@ background: #fff; transition: all 1s; opacity: 0;  left: -15px; right: -15px;}
 .navbar li>a:hover{color:#3953ba !important; }
 
 .headerwrap:hover{background:linear-gradient(#fff,#fff); -moz-transition: all 0.3s;
--webkit-transition: all 0.3s;
--o-transition: all 0.3s;
--ms-transition: all 0.3s;
+-webkit-transition: all 0.3s; */
+/* -o-transition: all 0.3s; */
+/* -ms-transition: all 0.3s;
 transition: all 0.3s;}
 .headerwrap:hover li>a{ color: #333; }
 .headerwrap.index .ny-logo{display:none;}
 .headerwrap.index .logo{display:block;}
 .headerwrap.index:hover .logo{display:none;}
-.headerwrap.index:hover .ny-logo{display:block;}
-
+.headerwrap.index:hover .ny-logo{display:block;} */
+/* 
 .thirdNav {position: relative;cursor: pointer; padding: 0 3%; width: calc(100%/4);}
 .thirdNav a{ font-size: 14px; color: #666; text-align: left;}
 .thirdNav a:hover{ 
@@ -80,7 +80,7 @@ transition: all 0.3s;}
 -moz-transition: all 0.4s linear;  
 -ms-transition: all 0.4s linear;  
 -o-transition: all 0.4s linear;  
-transition: all 0.4s linear;transform: translate(0,-2px); }
+transition: all 0.4s linear;transform: translate(0,-2px); } */
 
 /* .thirdNavList {position: absolute;left: 103px;top: 0;width: 200px;background: #0D2BA2;opacity: 0;} */
 /* .navbar .thirdNav:hover .thirdNavList{ visibility: visible; opacity: 1; } */
@@ -136,14 +136,14 @@ transition: all 0.4s linear;transform: translate(0,-2px); }
 
 .headerwrap-common:hover .navbar li > a{color: #141418;}
 
-.headerwrap-common .ny-logo{display: none;}
+/* .headerwrap-common .ny-logo{display: none;}
 .headerwrap-common .logo{display: block;}
 .headerwrap-common:hover .ny-logo{display: block;}
 .headerwrap-common:hover .logo{display: none;}
 .headerwrap-common .navbar li >a:hover{border-bottom: 2px solid #ffffff;}
 .headerwrap-common .navbar li >a{position: relative;}
 .headerwrap-common .navbar li >a.cur::before{position: absolute; content: ""; width: 20px; height: 4px; background: #ffffff; left: 50%; bottom: 12px; transform: translateX(-50%);}
-.headerwrap-common:hover .navbar li >a.cur::before{background: #ccc;}
+.headerwrap-common:hover .navbar li >a.cur::before{background: #ccc;} */
 
 
 .bar-btn{ cursor: pointer; display: none;}

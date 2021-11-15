@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="css/lightgallery.min.css" type="text/css">
+
+
+    <!-- huimei -->
+    <link rel="icon" href="img/logo_foot.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/nav.css">
+
+
     <!-- External Styles
             ============================================= -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -58,12 +66,37 @@
 </head>
 
 <body class="irhas1 home1">
+    <div class="header" style="height: 80px">
+        <div class="top-box" id="header">
+            <a href="index.html"><img class="h-logo" src="img/logo1.jpg" alt=""></a>
+            <ul class="h-nav">
+                <li class="active"><a href="index.html">首页</a><i class="i-line"></i></li>
+                <li><a href="product.html">产品服务</a><i class="i-line"></i></li>
+
+                <li><a href="news1.html">新闻动态</a><i class="i-line"></i></li>
+                <li><a href="about.html">关于金雀</a><i class="i-line"></i></li>
+                <li><a href="members.html">团队成员</a></li>
+
+                <!-- <li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+                <li class="login_in">
+                    <a href="joinus.html">加入我们</a>
+                </li>
+                <li class="split login_in"></li>
+                <li class="login_in">
+                    <a class="regbtn"></a>
+                </li>
+                <li class="login_in">
+                    <a class="quick" style="display: none"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- MAIN WRAPPER START
             ============================================= -->
     <div class="main-wrapper clearfix">
         <!-- HEADER START
                 ============================================= -->
-        <header id="header">
+        <!-- <header id="header">
             <div class="subheader ">
                 <div class="thaw-container">
                     <div class="flex justify-between flex-wrap items-center">
@@ -86,24 +119,22 @@
                 <div class="thaw-container">
                     <div class="header-style1-wrap grid grid-cols-12">
                         <div class="header-content-left col-span-9 res:col-span-12 sm:col-span-12 grid grid-cols-12">
-                            <!-- LOGO START
-                                                    ============================================= -->
                             <div class="logo col-span-3">
                                 <a href="index.html">
                                     <img src="img/logo1.jpg" alt="Logo" />
                                 </a>
                             </div>
                             <!-- LOGO END -->
-                            <!-- NAVIGATION START
+        <!-- NAVIGATION START
                                                     ============================================= -->
-                            <nav class="main-nav col-span-9  sm:col-span-12">
+        <!-- <nav class="main-nav col-span-9  sm:col-span-12">
                                 <!-- Mobile menu toggle button (hamburger/x icon) -->
-                                <input id="main-menu-state" type="checkbox" />
+        <!-- <input id="main-menu-state" type="checkbox" />
                                 <label class="main-menu-btn" for="main-menu-state">
                                     <span class="main-menu-btn-icon"></span> Toggle main menu visibility
                                 </label>
                                 <!-- Sample menu definition -->
-                                <ul id="main-menu" class="sm sm-clean">
+        <!-- <ul id="main-menu" class="sm sm-clean">
                                     <li class="menu-item has-submenu">
                                         <a href="index.html">首页</a>
                                     </li>
@@ -116,19 +147,19 @@
                                     <li class="menu-item has-submenu">
                                         <a href="members.html">成员简介</a>
 
-                                    </li>
+                                    </li> -->
 
-                                    <li class="menu-item ">
+        <!-- <li class="menu-item ">
                                         <a href="joinus.html">加入我们</a>
                                     </li>
                                     <li class="menu-item">
                                         <a href="contact.html">联系我们</a>
                                     </li>
-                                </ul>
-                            </nav>
-                            <!-- NAVIGATION END -->
-                        </div>
-                        <div class="header-content-right col-span-3">
+                                </ul> -->
+        <!-- </nav> -->
+        <!-- NAVIGATION END -->
+        <!-- </div> -->
+        <!-- <div class="header-content-right col-span-3">
                             <div class="content-right-area">
                                 <ul class="right-area-menu">
                                     <li class="right-area-item">
@@ -136,14 +167,14 @@
                                     </li>
                                     <li class="right-area-item">
                                         <!-- <a href="#" class="button button-head-item"></a> -->
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- </li>
+                        </ul>
+                    </div> -->
+        <!-- </div>
             </div>
-        </header>
+
+        </header>  -->
+
         <!-- HEADER END -->
 
         <!-- Content -->
@@ -260,7 +291,7 @@
                                     由两颗心相贴而成，代表了生命与关怀，寓意我们是一家“生命为本”的团队。“CANARY”字样，代表我们团队的英文名，说明我们是一家有国际化视野的民族企业。</p>
                             </div>
                             <div class="button-about">
-                                <a>团队简介</a>
+                                <a href="./about.html">了解更多</a>
                             </div>
                         </div>
                     </div>
@@ -422,7 +453,7 @@
                             <div class="the-title col-span-12 self-center">
                                 <h3>关于麻醉</h3>
                                 <h2>你了解多少呢？</h2>
-                                <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有人说，医生治病，
+                                <!-- <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有人说，医生治病，
                                     就像背着一个个病人趟过河流，可当你术后醒来，握着主刀医生的手感激涕零，
                                     却对麻醉医生不闻不问，甚至以为他们打个麻药就收工时，你不会记得一那段空白的时间里，
                                     麻醉医生如何深一脚浅一脚地背着你渡过术中那暗潮汹涌的河流。</p><br>
@@ -431,7 +462,7 @@
                                     其他医生只需专注自己的领域，只有麻醉医生必须懂内科、外科、妇科、儿科......
                                 </p>
                                 <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所以，用一句话概括麻醉医生的职责，那就是：总是保驾护航，
-                                    常常未雨绸缪，有时力挽狂澜。</p>
+                                    常常未雨绸缪，有时力挽狂澜。</p> -->
 
                                 <h1>&nbsp;</h1>
                                 <h1>&nbsp;</h1>
@@ -590,7 +621,7 @@
                                     <h4 class="widget-title">全国热线电话</h4>
                                 </div>
                                 <div class="textwidget">
-                                    <p>13655163394</p>
+                                    <p>156-5657-8587</p>
                                     <p>周一到周五09:00—17:30</p>
                                 </div>
                             </div>

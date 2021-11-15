@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
 
+    <!-- huimei -->
+    <link rel="icon" href="img/logo_foot.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/nav.css">
+
 
     <style type="text/css">
         ul li {
@@ -29,13 +34,6 @@
             text-indent: 2em;
         }
     </style>
-
-
-
-
-
-
-
 
 
     <!-- External Styles
@@ -56,87 +54,31 @@
     <div id="main-wrapper" class="animsition clearfix">
         <!-- HEADER START
         ============================================= -->
-        <header id="header">
-            <div class="subheader ">
-                <div class="thaw-container">
-                    <div class="flex justify-between flex-wrap items-center">
-                        <div class="subheader-content-left">
-                            <p><strong></strong> <span></span></p>
-                        </div>
-                        <div class="subheader-content-right justify-end flex flex-wrap items-stretch">
-                            <nav class="subheader-list flex">
-                                <ul id="menu-top" class="flex sm sm-clean the-subheader">
-                                    <li class="menu-item"><a href="#"></a></li>
-                                    <li class="menu-item"><a href="#"></a></li>
-                                    <li class="menu-item"><a href="#"></a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-style-1">
-                <div class="thaw-container">
-                    <div class="header-style1-wrap grid grid-cols-12">
-                        <div class="header-content-left col-span-9 res:col-span-12 sm:col-span-12 grid grid-cols-12">
-                            <!-- LOGO START
-                                                    ============================================= -->
-                            <div class="logo col-span-3">
-                                <a href="index.html">
-                                    <img src="img/logo1.jpg" alt="Irhas Logo" />
-                                </a>
-                            </div>
-                            <!-- LOGO END -->
-                            <!-- NAVIGATION START
-                                                    ============================================= -->
-                            <nav class="main-nav col-span-9  sm:col-span-12">
-                                <!-- Mobile menu toggle button (hamburger/x icon) -->
-                                <input id="main-menu-state" type="checkbox" />
-                                <label class="main-menu-btn" for="main-menu-state">
-                                    <span class="main-menu-btn-icon"></span> Toggle main menu visibility
-                                </label>
-                                <!-- Sample menu definition -->
-                                <ul id="main-menu" class="sm sm-clean">
-                                    <li class="menu-item has-submenu">
-                                        <a href="index.html">首页</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="about.html">关于金雀</a>
-                                    </li>
-                                    <li class="menu-item has-submenu">
-                                        <a href="news.html">新闻动态</a>
-                                    </li>
-                                    <li class="menu-item has-submenu">
-                                        <a href="members.html">成员简介</a>
+        <div class="header" style="height: 80px">
+            <div class="top-box" id="header">
+                <a href="index.html"><img class="h-logo" src="img/logo1.jpg" alt=""></a>
+                <ul class="h-nav">
+                    <li class="active"><a href="index.html">首页</a><i class="i-line"></i></li>
+                    <li><a href="product.html">产品服务</a><i class="i-line"></i></li>
 
-                                    </li>
+                    <li><a href="news1.html">新闻动态</a><i class="i-line"></i></li>
+                    <li><a href="about.html">关于金雀</a><i class="i-line"></i></li>
+                    <li><a href="members.html">团队成员</a></li>
 
-                                    <li class="menu-item ">
-                                        <a href="joinus.html">加入我们</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="contact.html">联系我们</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- NAVIGATION END -->
-                        </div>
-                        <div class="header-content-right col-span-3">
-                            <div class="content-right-area">
-                                <ul class="right-area-menu">
-                                    <li class="right-area-item">
-                                        <!-- <span class="phone-number">+136-5516-3394</span> -->
-                                    </li>
-                                    <li class="right-area-item">
-                                        <!-- <a href="#" class="button button-head-item">Contact us</a> -->
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <!-- <li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+                    <li class="login_in">
+                        <a href="joinus.html">加入我们</a>
+                    </li>
+                    <li class="split login_in"></li>
+                    <li class="login_in">
+                        <a class="regbtn"></a>
+                    </li>
+                    <li class="login_in">
+                        <a class="quick" style="display: none"></a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
         <!-- HEADER END -->
         <!-- Content -->
         <!-- <section class="content">
@@ -232,6 +174,7 @@
         <div class="joinpage ">
             <div class="join-box1">
                 <div class="title">
+                    <br><br><br><br><br>
                     <h3>工作在金雀</h3>
                     <p>Work Environment</p>
                 </div>
@@ -271,9 +214,9 @@
                     <ul>
                         <li>
                             <div class="txt">
-                                与技术大拿面对面交流
+                                与科研和技术专家面对面交流
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits1.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic1.jfif" alt="" srcset=""> <em></em>
                             </div>
                             <span></span>
                         </li>
@@ -281,7 +224,7 @@
                             <div class="txt">
                                 与国家重点实验室一流团队的合作机会
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits2.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic2.png" alt="" srcset=""> <em></em>
                             </div>
                             <span></span>
                         </li>
@@ -289,21 +232,21 @@
                             <div class="txt">
                                 直接参与前沿项目的开发和科研
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits3.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic3.jpg" alt="" srcset=""> <em></em>
                             </div><span></span>
                         </li>
                         <li>
                             <div class="txt">
                                 具有竞争力的津贴水平
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits4.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic4.jfif" alt="" srcset=""> <em></em>
                             </div><span></span>
                         </li>
                         <li>
                             <div class="txt">
                                 科学的团队激励机制
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits5.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic5.jfif" alt="" srcset=""> <em></em>
                             </div> <span></span>
                         </li>
                         <li>
@@ -311,22 +254,21 @@
                                 开放、共享、活跃的
                                 工作环境
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits6.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic6.jpg" alt="" srcset=""> <em></em>
                             </div> <span></span>
                         </li>
                         <li>
                             <div class="txt">
-                                定期团建、技术交流会
-                                超多福利
+                                定期团建、超多福利
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits7.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic7.jfif" alt="" srcset=""> <em></em>
                             </div><span></span>
                         </li>
                         <li>
                             <div class="txt">
                                 团队氛围融洽，工作舒心
                             </div>
-                            <div class="img"> <img src="./css/job/pic/Benefits8.jpg" alt="" srcset=""> <em></em>
+                            <div class="img"> <img src="img/joinus/welfare/pic8.jpg" alt="" srcset=""> <em></em>
                             </div> <span></span>
                         </li>
                     </ul>
@@ -342,26 +284,26 @@
                         <img src="./css/job/pic/Recruitment.png" alt="">
                         <div>
                             <h2>热招岗位</h2>
-                            <a href="/job/7">了解更多&gt;&gt;</a>
+                            <a href="job/society.html">了解更多&gt;&gt;</a>
                         </div>
                     </div>
                     <div class="right">
                         <ul>
                             <li>
-                                <h2>技术 <span>(共14个岗位)</span></h2>
-                                <a href="/job/7?type_id=1">了解更多&gt;</a>
+                                <h2>技术 <span>(共4个岗位)</span></h2>
+                                <a href="job/society.html">了解更多&gt;</a>
                             </li>
                             <li>
-                                <h2>产品 <span>(共3个岗位)</span></h2>
-                                <a href="/job/7?type_id=2">了解更多&gt;</a>
+                                <h2>产品 <span>(共1个岗位)</span></h2>
+                                <a href="job/society.html">了解更多&gt;</a>
                             </li>
                             <li>
-                                <h2>实施 <span>(共2个岗位)</span></h2>
-                                <a href="/job/7?type_id=5">了解更多&gt;</a>
+                                <h2>项目 <span>(共1个岗位)</span></h2>
+                                <a href="job/society.html">了解更多&gt;</a>
                             </li>
                             <li>
-                                <h2>咨询 <span>(共4个岗位)</span></h2>
-                                <a href="/job/7?type_id=6">了解更多&gt;</a>
+                                <h2>人事 <span>(共1个岗位)</span></h2>
+                                <a href="job/society.html">了解更多&gt;</a>
                             </li>
 
                         </ul>
@@ -386,16 +328,16 @@
                         <!--<li>-->
                         <!--</li>-->
                         <li>
-                            <a href="/job/8?type_id=1">
+                            <a href="job/campus.html">
                                 <img src="./css/job/pic/xzgw1.png" alt="" srcset="">
                                 <h2>技术</h2>
-                                <p>(共15个岗位)</p>
+                                <p>(共4个岗位)</p>
                             </a>
                         </li>
                         <li>
                         </li>
                         <li>
-                            <a href="/job/8?type_id=2">
+                            <a href="job/campus.html">
                                 <img src="./css/job/pic/xzgw2.png" alt="" srcset="">
                                 <h2>产品</h2>
                                 <p>(共0个岗位)</p>
@@ -404,35 +346,35 @@
                         <li>
                         </li>
                         <li>
-                            <a href="/job/8?type_id=5">
+                            <a href="job/campus.html">
                                 <img src="./css/job/pic/xzgw3.png" alt="" srcset="">
-                                <h2>实施</h2>
-                                <p>(共0个岗位)</p>
-                            </a>
-                        </li>
-                        <li>
-                        </li>
-                        <li>
-                            <a href="/job/8?type_id=6">
-                                <img src="./css/job/pic/xzgw4.png" alt="" srcset="">
-                                <h2>咨询</h2>
-                                <p>(共0个岗位)</p>
-                            </a>
-                        </li>
-                        <li>
-                        </li>
-                        <li>
-                            <a href="/job/8?type_id=3">
-                                <img src="./css/job/pic/xzgw5.png" alt="" srcset="">
                                 <h2>项目</h2>
                                 <p>(共0个岗位)</p>
                             </a>
                         </li>
                         <li>
                         </li>
+                        <li>
+                            <a href="job/campus.html">
+                                <img src="./css/job/pic/xzgw4.png" alt="" srcset="">
+                                <h2>人事</h2>
+                                <p>(共1个岗位)</p>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <a href="job/campus.html">
+                                <img src="./css/job/pic/xzgw5.png" alt="" srcset="">
+                                <h2>实施</h2>
+                                <p>(共0个岗位)</p>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
 
 
-                    </ul>
+                        <!-- </ul>
                     <div class="tit">校招流程</div>
                     <ul class="xzlc">
                         <li>
@@ -491,7 +433,7 @@
                             </div>
                             <div class="img"></div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -645,7 +587,7 @@
                             <div class="widget-footer widget_text">
                                 <div class="title">
                                     <h4 class="widget-title">全国热线电话</h4>
-                                    13655163394 <br><br>
+                                    156-5657-8587 <br><br>
                                     周一到周五09:00—17:30
 
                                 </div>
