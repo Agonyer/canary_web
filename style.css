@@ -1484,7 +1484,7 @@ svg.home1.svg1 {
 }
 
 .irhas1.about .team-loop-wrap{
-    padding: 0 25px;
+    padding: 0 160px;
 }
 
 .irhas1 .team-block .desc-team-wrap .desc-team {
@@ -1551,6 +1551,7 @@ svg.home1.svg1 {
     -webkit-box-pack: center;
     -webkit-box-align: center;
     transition: all .45s;
+    border-radius: 50%;
     
 }
 
@@ -1565,9 +1566,9 @@ svg.home1.svg1 {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     color: #fff;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: normal;
-    line-height: 36px;
+    line-height: 20px;
 }
 
 .irhas1 .team-style-2 .team-member .key-details .member-bio h4, .irhas1 .team-style-2 .team-member .key-details .member-bio h5, .irhas1 .team-slider .team-members-slide .team-member .key-details .member-bio p {
@@ -8434,7 +8435,7 @@ img.alignleft{
 
 .footer-widgets-holder {
     background-color: #111214;
-    padding: 80px 0 75px;
+    padding: 50px 0 50px;
 }
 
 .irhas1 .footer-widgets2 {
