@@ -8,7 +8,7 @@
 #Gray (text) = #555555 / #AAAAAA
 #Light Gray (background, hover) = #F5F5F5 / #C8C8C8 / #999999
 #Light Yellow (background) = #FBF9F1 / #FDEDBA
-#Green (button, background, icon) = #2c78ce
+#Green (button, background, icon) = #1a598c
 #Yellow (title, subtitle, text, button) = #EDA42E
 #Dark Blue (subtitle, title, text, background) = #16163F / #17193C
 #Light Blue (button, subtitle, text, border, hover) = #EE7F2 / #7294E1
@@ -261,12 +261,12 @@ th a:hover {
 }
 
 *::-moz-selection {
-	background-color: #2c78ce;
+	background-color: #1a598c;
 	color: #ffffff;
 }
 
 *::selection {
-	background-color: #2c78ce;
+	background-color: #1a598c;
 	color: #ffffff;
 }
 
@@ -303,7 +303,7 @@ blockquote:before {
     z-index: 0;
     height: 50%;
     width: 7px;
-    background: #2c78ce;
+    background: #1a598c;
     transform: translateY(-50%);
 }
 blockquote p {
@@ -394,7 +394,7 @@ blockquote p {
     text-transform: capitalize;
     color: #FFFFFF;
     padding: 15px 30px;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 50px 50px 50px 50px;
 }
 
@@ -496,7 +496,7 @@ body.irhas3{
 /* 2.1. Subheader */
 
 .subheader {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     padding: 10px 0;
 }
 
@@ -577,7 +577,7 @@ body.irhas3{
 }
 
 .sm-clean ul {
-    border-top: 2px solid #2c78ce;
+    border-top: 2px solid #1a598c;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -588,7 +588,7 @@ body.irhas3{
 
 .sm-clean > li > ul:before, .sm-clean > li > ul:after {
     left: 16px;
-    border-color: transparent transparent #2c78ce transparent;
+    border-color: transparent transparent #1a598c transparent;
 }
 .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
     color: #000;
@@ -598,7 +598,7 @@ body.irhas3{
 }
 
 .irhas1 .sm-clean a:hover, .irhas1 .sm-clean a:focus, .irhas1 .sm-clean a:active {
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .content-right-area {
@@ -621,7 +621,7 @@ a.button.button-head-item {
     background-color: #f0f3e0;
     padding: 10px 20px;
     border-radius: 20px;
-    color: #2c78ce;
+    color: #1a598c;
     font-weight: 500;
 }
 
@@ -860,7 +860,7 @@ video.video-banner {
 
 .irhas1 span.divider-counter {
     height: 4px;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     width: 15%;
     display: inline-block;
     vertical-align: middle;
@@ -948,7 +948,7 @@ video.video-banner {
 .irhas1 .button-about a {
     padding: 11px 30px;
     color: #ffffff;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -1050,7 +1050,7 @@ video.video-banner {
 
 .irhas1 .service-block {
     padding: 18px 0;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     max-height: 100vh;
     height: 47.5vh;
 }
@@ -1061,7 +1061,7 @@ svg.home1.svg1 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #2c78ce;
+    background-color: #1a598c;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     fill: #fff;
 }
@@ -1092,7 +1092,7 @@ svg.home1.svg1 {
     text-transform: capitalize;
     fill: #FFFFFF;
     color: #FFFFFF;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-style: solid;
     border-width: 2px;
     border-radius: 50px;
@@ -1324,10 +1324,10 @@ svg.home1.svg1 {
 
 .irhas1 .portfolio-button a {
     color: #ffffff;
-    background: #2c78ce;
+    background: #1a598c;
     border-radius: 50px;
     color: #ffffff;
-    background: #2c78ce;
+    background: #1a598c;
     border-radius: 50px;
     padding: 10px 30px;
     font-size: 16px;
@@ -1427,7 +1427,7 @@ svg.home1.svg1 {
     z-index: 1;
     opacity: 0;
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 5px;
 }
 
@@ -1484,7 +1484,7 @@ svg.home1.svg1 {
 }
 
 .irhas1.about .team-loop-wrap{
-    padding: 0 160px;
+    padding: 0 100px;
 }
 
 .irhas1 .team-block .desc-team-wrap .desc-team {
@@ -1517,7 +1517,7 @@ svg.home1.svg1 {
     text-transform: capitalize;
     padding: 10px 30px;
     color: #ffffff;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 50px;
 }
 
@@ -1706,7 +1706,7 @@ svg.home1.svg1 {
     text-transform: capitalize;
     padding: 10px 30px;
     color: #ffffff;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 50px;
 }
 
@@ -1870,7 +1870,7 @@ svg.home1.svg1 {
 }
 
 .irhas1 .blog-item-style-1 .standard-post-date a:hover {
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .irhas1 .blog-item-style-1 .info-author h5 {
@@ -2539,7 +2539,7 @@ a.button.button-head-item2:hover {
     z-index: 1;
     opacity: 0;
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 5px;
 }
 
@@ -3394,7 +3394,7 @@ a.button.button-head-item2:hover {
     z-index: 1;
     opacity: 0;
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 5px;
 }
 
@@ -4250,7 +4250,7 @@ a.button.button-head-item2:hover {
 
 .irhas1 .banner-contact-block {
     padding: 57px 0;
-    background-color: #2c78ce;
+    background-color: #1a598c;
 }
 
 .irhas1 .banner-contact-block .title-contact-banner {
@@ -4281,8 +4281,8 @@ a.button.button-head-item2:hover {
 
 .irhas1 .button-banner-contact a {
     font-weight:bold;
-    fill: #2c78ce;
-    color: #2c78ce;
+    fill: #1a598c;
+    color: #1a598c;
     background-color: #FFFFFF;
     border-radius: 50px 50px 50px 50px;
     padding: 11px 30px;
@@ -4654,7 +4654,7 @@ a.button.button-head-item2:hover {
 
 .irhas1.projects .banner-contact-block {
     padding: 67px 0;
-    background-color: #2c78ce;
+    background-color: #1a598c;
 }
 
 .irhas1.projects .banner-contact-block .title-contact-banner {
@@ -4672,8 +4672,8 @@ a.button.button-head-item2:hover {
 
 .irhas1.projects .button-banner-contact a {
     font-weight:bold;
-    fill: #2c78ce;
-    color: #2c78ce;
+    fill: #1a598c;
+    color: #1a598c;
     background-color: #FFFFFF;
     border-radius: 50px 50px 50px 50px;
     padding: 11px 30px;
@@ -4843,7 +4843,7 @@ a.button.button-head-item2:hover {
     z-index: 1;
     opacity: 0;
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 5px;
 }
 
@@ -5181,7 +5181,7 @@ a.button.button-head-item2:hover {
 }
 
 .irhas1.about .team-style-2 .team-member .title-style {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .irhas1.about .partner-block .the-desc {
@@ -5244,7 +5244,7 @@ a.button.button-head-item2:hover {
     -webkit-background-size: 27px 44px;
     background-size: 27px 44px;
     background: no-repeat 50%;
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .irhas1.about .gallery-wrap .swiper-button-next:after, .swiper-button-prev:after {
@@ -5321,7 +5321,7 @@ a.button.button-head-item2:hover {
 }
 
 .irhas1.about .team-style-2 .team-profile.text-center {
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .gallery-block .slider-gallery .swiper-slide img {
@@ -6042,13 +6042,13 @@ textarea.field-contact-irhas1 {
     border: 0;
     border-radius: 5px 5px 5px 5px;
     padding: 15px 45px 15px 45px;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     color: #ffffff;
     cursor: pointer;
 }
 
 .button-contact-irhas1 input[type="submit"]:hover {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     color: #ffffff;
     cursor: pointer;
 }
@@ -6307,11 +6307,11 @@ textarea.field-contact-irhas1 {
     bottom: 0;
     z-index: 0;
     height: calc(100% + 80px);
-    background: #2c78ce;
+    background: #1a598c;
 }
 
 .navigation-paging .post-navigation a {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     padding: 14px 24px;
     color: #ffffff;
     font-size: 14px;
@@ -6386,7 +6386,7 @@ textarea.field-contact-irhas1 {
 }
 
 .blog-section .button-style-1 span:nth-child(1) {
-    background: #2c78ce;
+    background: #1a598c;
     color: #ffffff;
 }
 
@@ -6450,7 +6450,7 @@ textarea.field-contact-irhas1 {
 }
 
 .blog-section .post-style-1 .blog-category a:hover {
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .irhas1.blog .blog-widgets-wrap {
@@ -6493,7 +6493,7 @@ form.searchform {
 .widget h4.widget-title:before {
     content: '';
     position: absolute;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     width: 90px;
     height: 2px;
     bottom: 0;
@@ -6529,7 +6529,7 @@ form.searchform {
 }
 
 .custom-post-widget .post-content .post-thumb .irhas-overlay {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -6548,7 +6548,7 @@ form.searchform {
 }
 
 .sidebar span.comment-author-link {
-    color: #2c78ce;
+    color: #1a598c;
     font-weight: bold;
 }
 
@@ -6566,7 +6566,7 @@ form.searchform {
 }
 
 .blog-sidebar .widget ul li span.comment-author-link {
-    color: #2c78ce;
+    color: #1a598c;
     font-weight: bold;
 }
 
@@ -6606,9 +6606,9 @@ form.searchform {
 }
 
 .tagcloud a:hover {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     color: #fff;
-    border: 1px solid #2c78ce;
+    border: 1px solid #1a598c;
 }
 
 .irhas-service-contact input, .irhas-service-contact textarea {
@@ -6623,7 +6623,7 @@ form.searchform {
 }
 
 .irhas-service-contact input[type=submit] {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 30px;
     padding: 15px 35px;
     height: auto;
@@ -6898,13 +6898,13 @@ form.searchform {
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    color: #2c78ce;
+    color: #1a598c;
     text-align: center;
     line-height: 45px;
     transition: 0.4s;
 }
 .sosmed-icon a{
-    color: #2c78ce;
+    color: #1a598c;
     font-size: 17px;
 }
 .sosmed-icon:hover a{
@@ -6999,7 +6999,7 @@ span.icf-button-text {
     text-transform: uppercase;
     border-radius: 5px 5px 5px 5px;
     padding: 15px 45px 15px 45px;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     color: #ffffff;
     transition: 0.4s;
 }
@@ -7281,11 +7281,11 @@ span.icf-button-text:hover {
     top: 0;
 }
 .single-post-wrap .blog-single .the-category.span-head a {
-    color: #2c78ce;
+    color: #1a598c;
     transition: 0.4s;
 }
 .blog-single .tag-wrapper a {
-    color: #2c78ce;
+    color: #1a598c;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 13px;
@@ -7410,7 +7410,7 @@ span.icf-button-text:hover {
 }
 
 .custom-post-widget .post-content .post-thumb .irhas-overlay {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -7426,7 +7426,7 @@ span.icf-button-text:hover {
 }
 
 .custom-post-widget .post-content .post-inner-content.has-thumb {
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .blog-sidebar .widget ul  {
@@ -7725,7 +7725,7 @@ span.icf-button-text:hover {
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
-    background: #2c78ce;
+    background: #1a598c;
     display: inline-block;
     border-radius: 50px;
     cursor: default;
@@ -7804,7 +7804,7 @@ span.icf-button-text:hover {
 }
 
 .irhas-service-contact input[type="submit"] {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     border-radius: 30px;
     padding: 15px 35px;
     height: auto;
@@ -7852,11 +7852,11 @@ span.icf-button-text:hover {
 }
 
 .accordion-1 .head:hover .arrow{
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .accordion-1 .head:hover h4 {
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .accordion-1 .arrow-animate {
@@ -7922,7 +7922,7 @@ span.icf-button-text:hover {
 
 .service-thumb-wrap .post-item:hover {
     border-left: 6px solid #208060;
-    background-color: #2c78ce;
+    background-color: #1a598c;
     transition: 100ms; 
     color: #000000;
 }
@@ -8002,7 +8002,7 @@ span.icf-button-text:hover {
 
 .widget_irhas_testimonial .testimonial-wrap .testimonial-detail-inner cite {
     font-size: 13px;
-    color: #2c78ce;
+    color: #1a598c;
     font-style: normal;
 }
 .widget_irhas_testimonial .testimonial-wrap .testimonial-detail-inner cite:before {
@@ -8033,9 +8033,9 @@ span.icf-button-text:hover {
     transition: all .3s ease;
 }
 .widget_irhas_testimonial .car-page-arrow:hover i:before {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     color: #ffffff;
-    border: 1px solid #2c78ce;
+    border: 1px solid #1a598c;
 }
 
 .sidebar .widget_irhas_testimonial .service-testi-slide {
@@ -8228,7 +8228,7 @@ span.icf-button-text:hover {
     height: 6rem;
     color: #ffffff;
     border-radius: 50%;
-    background: #2c78ce;
+    background: #1a598c;
     outline: none;
 }
 
@@ -8238,7 +8238,7 @@ span.icf-button-text:hover {
     height: 6rem;
     color: #fefefe;
     border-radius: 50%;
-    background: #2c78ce;
+    background: #1a598c;
     outline: none;
 }
 
@@ -8354,7 +8354,7 @@ img.alignleft{
 
 .pagination-project i {
     line-height: 0;
-    color: #2c78ce;
+    color: #1a598c;
 }
 
 .pagination-project .prev-project i {
@@ -8470,6 +8470,7 @@ img.alignleft{
     line-height: 21px;
     font-weight: 500;
     color: #ffffff;
+    
 }
 
 .irhas3 .latest-post-content a span{
@@ -8531,7 +8532,7 @@ img.alignleft{
 }
 
 .irhas1 .latest-post-content a i {
-    color: #2c78ce;
+    color: #1a598c;
     font-size: 14px;
     margin-right: 10px;
     margin-top: -2px;
@@ -8539,7 +8540,7 @@ img.alignleft{
 }
 
 .footer-bottom-holder {
-    background-color: #2c78ce;
+    background-color: #1a598c;
     padding: 10px 0;
 }
 
