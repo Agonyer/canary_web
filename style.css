@@ -1484,7 +1484,7 @@ svg.home1.svg1 {
 }
 
 .irhas1.about .team-loop-wrap{
-    padding: 0 100px;
+    padding: 0 40px;
 }
 
 .irhas1 .team-block .desc-team-wrap .desc-team {
@@ -1534,8 +1534,8 @@ svg.home1.svg1 {
 .irhas1 .team-style-2 .team-member .key-details .member-bio {
     opacity: 0;
     position: absolute;
-    top: -11%;
-    left: 5px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -5171,7 +5171,7 @@ a.button.button-head-item2:hover {
 }
 
 .irhas1.about .team-wrap{
-    padding: 50px 15px 47px 23px; 
+    padding: 50px 0px 47px 0px; 
 }
 
 .irhas1.about .team-block .desc-team-wrap .desc-team {

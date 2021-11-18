@@ -238,7 +238,8 @@
 }
 
 .content_left {
-    line-height: 60px
+    line-height: 60px;
+    margin-left: 48px;
 }
 
 .content_right p {
