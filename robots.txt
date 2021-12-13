@@ -1,0 +1,3 @@
+User-agent:*
+Disallow:/about/
+Sitemap:http://www.icanary.cn/sitemap.xml

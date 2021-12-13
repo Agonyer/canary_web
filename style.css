@@ -892,7 +892,7 @@ video.video-banner {
 }
 
 .irhas1 .about-wrap {
-    padding: 245px 10px 230px;
+    padding: 100px 0px 100px;
 }
 
 .irhas1 .about-block .about-desc {
@@ -4190,7 +4190,7 @@ a.button.button-head-item2:hover {
 
 .irhas1 .banner-header-style2 {
     position: relative;
-    background-image: url('./img/banner1.jpg');
+    background-image: url('./img/bgpic/index.jpeg');
     background-position: center;
     background-size: cover;
 }
@@ -4315,7 +4315,7 @@ a.button.button-head-item2:hover {
 
 .irhas2.service .banner-header-style2 {
     position: relative;
-    background-image: url('./img/background2.jpg');
+    background-image: url('./img/bgpic/about.jpeg');
     background-position: center;
     background-size: cover;
 }
@@ -4509,7 +4509,7 @@ a.button.button-head-item2:hover {
 
 .irhas3.service .banner-header-style2 {
     position: relative;
-    background-image: url('./img/background2.jpg');
+    background-image: url('./img/bgpic/index.jpeg');
     background-position: center center;
     background-size: cover;
 }
@@ -4614,9 +4614,227 @@ a.button.button-head-item2:hover {
 
 /* 5.1. Project Page Irhas 1 */
 
+/* 加入banner */
+.banner-header-style6 {
+    position: relative;
+    background-image: url('./img/bgpic/member.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+ .banner-header-style6 .banner-header-style6-overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ .banner-header-style6 .title-banner-style6 {
+    padding: 231px 0 75px;
+    text-align: center;
+    position: relative;
+}
+
+ .banner-header-style6 .title-banner-style6 span {
+    display: block;
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #EDA42E;
+}
+
+ .banner-header-style6 .title-banner-style6 h2 {
+    color: #ffffff;
+}
+/* 成员banner */
+.banner-header-style5 {
+    position: relative;
+    background-image: url('./img/bgpic/member.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+ .banner-header-style5 .banner-header-style5-overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ .banner-header-style5 .title-banner-style5 {
+    padding: 231px 0 75px;
+    text-align: center;
+    position: relative;
+}
+
+ .banner-header-style5 .title-banner-style5 span {
+    display: block;
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #EDA42E;
+}
+
+ .banner-header-style5 .title-banner-style5 h2 {
+    color: #ffffff;
+}
+
+
+
+/* 关于banner */
+ .banner-header-style4 {
+    position: relative;
+    background-image: url('./img/bgpic/about.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+ .banner-header-style4 .banner-header-style4-overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ .banner-header-style4 .title-banner-style4 {
+    padding: 231px 0 75px;
+    text-align: center;
+    position: relative;
+}
+
+ .banner-header-style4 .title-banner-style4 span {
+    display: block;
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #EDA42E;
+}
+
+ .banner-header-style4 .title-banner-style4 h2 {
+    color: #ffffff;
+}
+
+
+
+/* 产品banner */
+
+.irhas1.projects .banner-header-style3 {
+    position: relative;
+    background-image: url('./img/bgpic/about.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.irhas1.projects .banner-header-style3 .banner-header-style3-overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.irhas1.projects .banner-header-style3 .title-banner-style3 {
+    padding: 212px 0 75px;
+    text-align: center;
+    position: relative;
+}
+
+.irhas1.projects .banner-header-style3 .title-banner-style3 span {
+    display: block;
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #EDA42E;
+}
+
+.irhas1.projects .banner-header-style3 .title-banner-style3 h2 {
+    color: #ffffff;
+}
+
+.irhas1.projects .portfolio-block {
+    padding: 110px 0 131px;
+}
+
+.irhas1.projects .banner-contact-block {
+    padding: 67px 0;
+    background-color: #1a598c;
+}
+
+.irhas1.projects .banner-contact-block .title-contact-banner {
+    color: #ffffff;
+}
+
+.irhas1.projects .title-contact-banner .the-title h2 {
+    color: #ffffff;
+}
+
+.irhas1.projects .title-contact-banner .the-title p {
+    color: #ffffff;
+    padding: 0 190px;
+}
+
+.irhas1.projects .button-banner-contact a {
+    font-weight:bold;
+    fill: #1a598c;
+    color: #1a598c;
+    background-color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    padding: 11px 30px;
+}
+
+.irhas1.projects .portfolio-block .portfolio-item-loop {
+    padding: 0;
+}
+
+.irhas1.projects .portfolio-style-1 .portfolio-grid-text .portfolio-title {
+    margin-bottom: 5px;
+}
+
+.irhas1.projects .portfolio-style-1 .portfolio-grid-text 
+.portfolio-cate {
+    font-size: 1.5rem;
+}
+
+.irhas1.projects .portfolio-style-1 {
+    min-height: 445px;
+}
+
+/* 5.2. Project Page Irhas 2 */
+
+.irhas2.project .banner-header-style2 {
+    position: relative;
+    background-image: url('./img/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.irhas2.project .banner-header-style2 .banner-header-style2-overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.irhas2.project .banner-header-style2 .title-banner-style2 {
+    padding: 103px 0 92px; 
+    text-align: center;
+    position: relative;
+}
+
+
+/* 新闻banner */
 .irhas1.projects .banner-header-style2 {
     position: relative;
-    background-image: url('./img/news_bg.jpg');
+    background-image: url('./img/bgpic/index.jpeg');
     background-position: center;
     background-size: cover;
 }

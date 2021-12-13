@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- Stylesheets
+                ============================================= -->
+  <link rel="stylesheet" href="css/aos.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="css/plugin.css" type="text/css" /> -->
+  <link rel="stylesheet" href="css/thaw-flexgrid.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="css/font.css" type="text/css" /> -->
+  <!-- <link rel="stylesheet" href="css/all.min.css" type="text/css"> -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="css/responsive.css" type="text/css" /> -->
+  <!-- External Styles
+            ============================================= -->
+
+  <!-- huimei -->
+  <link rel="icon" href="img/logo_foot.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./static/css/reset.css" />
+  <link rel="stylesheet" href="./static/css/nav.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Document Title
+                ============================================= -->
+
+  <link rel="shortcut icon" href="img/logo_foot.png" />
+  <link rel="stylesheet" type="text/css" href="./static/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="./static/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./static/css/animate.min.css" />
+  <title>金雀医疗-新闻详情</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/news-detail.css" />
+  <script src="./js/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="./js/axios.js"></script>
+  <script src="./js/getUrlParam.js"></script>
+  <script src="./js/Markdown.Converter.js"></script>
+
+  <script type="text/javascript">
+    try {
+      var urlhash = window.location.hash;
+      if (!urlhash.match("fromapp")) {
+        if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+          var url = window.location.href;
+          if (url.search('www')) {
+            url = url.replace('www', "m");
+            window.location = url;
+          }
+
+        }
+      }
+    }
+    catch (err) {
+    }
+  </script>
+
+  <style>
+    p {
+      font-size: 15px;
+      text-indent: 2rem;
+    }
+  </style>
+
+</head>
+
+<body class="irhas1 projects">
+
+  <div class="header" style="height: 80px">
+    <div class="top-box" id="header">
+      <a href="./index.html"><img class="h-logo" src="./img/jinque_logo.png" alt=""></a>
+      <ul class="h-nav">
+        <li class="active"><a href="./index.html">首页</a><i class="i-line"></i></li>
+        <li><a href="./product.html">研发项目</a><i class="i-line"></i></li>
+
+        <li><a href="./news1.html">新闻咨询</a><i class="i-line"></i></li>
+        <li><a href="./about.html">关于金雀</a><i class="i-line"></i></li>
+        <li><a href="./members.html">团队成员</a></li>
+
+        <!-- <li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+        <li class="login_in">
+          <a href="./joinus.html">加入我们</a>
+        </li>
+        <li class="split login_in"></li>
+        <li class="login_in">
+          <a class="regbtn"></a>
+        </li>
+        <li class="login_in">
+          <a class="quick" style="display: none"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="content">
+    <!-- Banner header block -->
+    <div class="banner-header-style7">
+      <div class="banner-header-style7-overlay"></div>
+      <div class="thaw-container">
+        <div class="title-banner-style7-wrap grid grid-cols-12">
+          <div class="title-banner-style7 the-title col-span-12" data-aos="fade-up" data-aos-duration="2000"
+            style="height: 200px;">
+            <h3></h3>
+            <h1>&nbsp;</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br>
+  </div>
+
+
+  <div id='app'>
+    <div class="news_content">
+      <div class="content_left" align="center">
+        <h2 class="title">{{newsItem.title}}</h2>
+        <div class="markdown-body" v-html="newsItem.content"></div>
+      </div>
+      <div class="content_right">
+        <p>关注金雀医疗官网</p>
+        <p> 第一时间获取金雀医疗资讯</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function getUrlParam(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]); return null;
+    }
+
+    let converter = new Markdown.Converter()
+    let id = getUrlParam("id")
+    console.log(id)
+    new Vue({
+      el: '#app',
+      data: {
+        newsItem: {
+          id: "",
+          title: "",
+          content: ""
+        },
+        ownBlog: false,
+      },
+      created() {
+        const newsId = id
+        console.log(newsId)
+        const _this = this
+        axios.get('http://8.217.44.252:8084/news/' + newsId).then(res => {
+          const newsItem = res.data.data
+          _this.newsItem.id = newsItem.id
+          _this.newsItem.title = newsItem.title
+          let htmlContent = converter.makeHtml(newsItem.content)
+          console.log(htmlContent)
+          _this.newsItem.content = htmlContent
+        })
+      }
+    })
+  </script>
+
+  <footer class="footer">
+    <!-- Footer Widgets -->
+    <div class="footer-widgets-holder">
+      <div class="thaw-container">
+        <div class="footer-widgets2 grid grid-cols-12 gap-24">
+          <div class="footer-widget item col-span-2 sm:col-span-12 res:col-span-12">
+            <div class="widget-footer widget_text">
+              <div class="textwidget">
+                <p class="logo-footer"><img src="img/logo_foot.png" alt=""></p>
+                <p></p>
+              </div>
+            </div>
+            <div id="irhas_icon-widget-2" class="widget-footer widget_irhas_icon">
+            </div>
+          </div>
+          <div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12">
+            <div class="widget-footer widget_irhas_servicepost">
+              <div class="title">
+                <h4 class="widget-title">更多详情</h4>
+              </div>
+              <br>
+              <div class="sidebar-recent-post">
+                <!-- widget-news -->
+                <div class="post-item">
+                  <div class="latest-post-content">
+                    <h4>
+                      <a>
+
+                        <span>联系我们：business@icanary.cn</span>
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <!-- widget-news end -->
+                <!-- widget-news -->
+                <!-- <div class="post-item">
+                          <div class="latest-post-content">
+                            <h4>
+                              <a>
+                                <i class="fa fa-chevron-right"></i>
+                                <span>媒体合作：mycheng@mail.ustc.edu.cn</span>
+                              </a>
+                            </h4>
+                          </div>
+                        </div> -->
+                <!-- widget-news end -->
+                <!-- widget-news -->
+                <br>
+                <div class="post-item">
+                  <div class="latest-post-content">
+                    <h4>
+                      <a>
+                        <span>加入我们：<br>join@icanary.cn</span>
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <!-- widget-news end -->
+                <!-- widget-news -->
+                <br>
+                <!-- <div class="post-item">
+                                <div class="latest-post-content">
+                                  <h4>
+                                    <a>
+                                      <i class="fa fa-chevron-right"></i>
+                                      <span>团队地址：安徽省合肥市蜀山区望江西路5089号（中国科学技术大学先进技术研究院）</span>
+                                    </a>
+                                  </h4>
+                                </div>
+                              </div> -->
+                <!-- widget-news end -->
+              </div>
+            </div>
+          </div>
+          <div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12">
+            <div class="widget-footer widget_irhas_newestpostthumb">
+              <div class="title">
+                <h4 class="widget-title">团队地址</h4>
+              </div>
+              <br>
+              <div class="custom-post-widget clearfix">
+                <div class="custom-post-wrap">
+                  <!-- widget-news -->
+                  <div class="post-item clearfix">
+                    <div class="post-content clearfix">
+                      <!-- <div class="post-thumb-wrap">
+                                        <div>
+                                          <a>
+                                            <img src="img/big_screen.jpg" alt="latestwid-img"
+                                              width="150px" height="150px">
+
+                                                    </a>
+                                                </div>
+                                        </div> -->
+                      <!-- thumbnail-->
+                      <div class="post-inner-content has-thumb clearfix">
+                        <h4 style="font-size: 15px
+                                                ;color: #fff;font-weight: 500;line-height: 21px;">
+                          <span>安徽省合肥市蜀山区望江西路5089号（中国科学技术大学先进技术研究院）
+                          </span>
+                        </h4>
+                        <div class="meta-latest-news">
+                          <div class="meta-info">
+                            <span class="date span-head">
+                              <a href="#">
+                                <span></span>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- widget-news end -->
+                  <!-- widget-news -->
+                  <div class="post-item clearfix">
+                    <div class="post-content clearfix">
+                      <!-- <div class="post-thumb-wrap">
+                                          <div>
+                                            <a href="xxx.html">
+                                              <img src="img/knowledge_graph.jpg" alt="latestwid-img"
+                                                width="150px" height="150px">
+                                                    </a>
+                                                </div>
+                                          </div> -->
+                      <!-- thumbnail-->
+                      <div class="post-inner-content has-thumb clearfix">
+                        <h5 style="font-size: 15px
+                                                ;"><a href="#"></a>
+                        </h5>
+                        <div class="meta-latest-news">
+                          <div class="meta-info">
+                            <span class="date span-head">
+                              <a href="#">
+                                <span></span>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- widget-news end -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12">
+            <div class="widget-footer widget_text">
+              <div class="title">
+                <h4 class="widget-title">全国热线电话</h4>
+              </div>
+              <br>
+              <div class="textwidget">
+                <h4 style="font-size: 15px
+                                ;color: #fff;font-weight: 500;line-height: 21px;">156-5657-8587</h4>
+                <h4 style="font-size: 15px
+                                ;color: #fff;font-weight: 500;line-height: 21px;">周一到周五09:00—17:30</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer Widgets -->
+    <div class="footer-bottom-holder">
+      <div class="thaw-container">
+        <div class="footer-bottom grid grid-cols-12">
+          <div class="footer-bottom-lisensi col-span-6 res:col-span-12 sm:col-span-12 self-center">
+            <!-- COPYRIGHT START-->
+            <p class="copyright-footer">
+            </p>
+            <!-- COPYRIGHT END -->
+          </div>
+          <div
+            class="footer-bottom-contact col-span-6 res:col-span-12 sm:col-span-12 self-center flex justify-end flex-wrap items-stretch items-center">
+            <div class="contact-footer items-center">
+              <div class="contact-footer-menu">
+                <ul class="sm">
+                  <li class="menu-item"><a href="#"></a></li>
+                  <li class="menu-item"><a href="#"></a></li>
+                  <li class="menu-item"><a href="#"></a></li>
+                </ul>
+              </div>
+              <ul class="footer-socials">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="./static/home/js/jquery-1.8.3.min.js"></script>
+                        <script src="./static/home/js/swiper.min.js"></script>
+                        <script src="./static/home/js/more.js"></script>
+                        <script src="./static/home/js/wow.min.js"></script> -->
+  <!-- <script type="text/javascript" src="/static/common/js/layer/layer.js"></script>
+                        <script type="text/javascript" src="/static/common/js/feedback.js"></script> -->
+
+</body>
+
+</html>

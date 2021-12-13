@@ -388,7 +388,7 @@ cursor: pointer; color: #9fa0a0; font-size: 14px; transition: all 0.6s;}
 
 
 /* 关于我们 */
-.about-sec1{ padding: 70px 0; position: relative;}
+.about-sec1{ padding: 0px 0; position: relative;}
 .about-sec1 .a1 img,.about-sec1 .a2 img{ display: block; height: auto; max-width: 100%;}
 .about-sec1 .a2{ position: absolute; top: 0; right: 0; z-index: -1; }
 .about-sec1 .a1{ position: absolute; bottom: -5px; left: 0; z-index: -1;}
@@ -505,7 +505,7 @@ color: #fff; background:url(../images/prev2.png) no-repeat center; height: 29px;
 .neibanner .item-text6  a:hover{ transform: translateY(5px);}
 
 
- .join-box1{ padding: 70px 0;}
+ .join-box1{ padding: 0px 0;}
 .join-box1tu{ padding: 50px 0; margin-top: 50px;}
 .join-box1tu .swiper-slide {transform-origin: center;-webkit-transition: transform 1.0s;-moz-transition: transform 1.0s;-ms-transition: transform 1.0s;-o-transition: transform 1.0s;-webkit-transform: scale(1);transform: scale(1);
  z-index: 33;}
@@ -609,7 +609,7 @@ font-size: 14px; margin: 20px 0;}
 	justify-content: space-between;}
 .fenpian i{ display: block; color: #000; font-size: 14px; margin-bottom: 10px;}
 .fenpian a{ display: block; color: #555; font-size: 14px;}
-.fenxi-pt35{position:relative;padding-top:35px;}
+.fenxi-pt35{position:relative;padding-top:0px;}
 .dutyWish_con{}
 .dutyWish{
 margin-left: -10px;

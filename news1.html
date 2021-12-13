@@ -29,6 +29,12 @@
     <link rel="stylesheet" type="text/css" href="./static/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./static/css/animate.min.css" />
     <title>金雀医疗-新闻</title>
+
+
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="./js/axios.js"></script>
 </head>
 
 <body class="irhas1 projects">
@@ -40,9 +46,9 @@
             <a href="index.html"><img class="h-logo" src="img/jinque_logo.png" alt=""></a>
             <ul class="h-nav">
                 <li class="active"><a href="index.html">首页</a><i class="i-line"></i></li>
-                <li><a href="product.html">产品服务</a><i class="i-line"></i></li>
+                <li><a href="product.html">研发项目</a><i class="i-line"></i></li>
 
-                <li><a href="news1.html">新闻动态</a><i class="i-line"></i></li>
+                <li><a href="news1.html">新闻咨询</a><i class="i-line"></i></li>
                 <li><a href="about.html">关于金雀</a><i class="i-line"></i></li>
                 <li><a href="members.html">团队成员</a></li>
 
@@ -85,104 +91,76 @@
             <div class="newscont">
                 <div class="news-left">
                     <div class="news-left-title" style="margin-left: 50px;">
-                        <h3>新闻动态</h3>
+                        <h3>动态发布</h3>
                         <ul>
                             <li class="" style="background-color: #0545a7;">
                                 <a href="news1.html" style="color: #fff;">金雀发布</a></p>
                             </li>
                             <li class="">
-                                <a href="news2.html">技术前沿</a></p>
+                                <a href="news2.html">前沿动态</a></p>
                             </li>
                             <li class="">
-                                <a href="news3.html">行业资讯</a></p>
+                                <a href="news3.html">技术博客</a></p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="news-right">
+                <div id="app">
+                    <div class="news-right">
+                        <div class="t1">
+                            <h3></h3>
+                        </div>
+                        <ul>
+                            <li v-for="(item,index) in newsList">
+                                <a :href="'./newsContent.html?id='+item.id" style="width: 900px;">
+                                    <div class="date">
+                                        <h3>{{item.createTime.slice(-2)}}</h3>
+                                        <p>{{item.createTime.slice(0,-3)}}</p>
+                                    </div>
+                                    <figure><img :src='item.imageUrl'>
+                                    </figure>
+                                    <figcaption>
+                                        <h4>{{item.title}}</h4>
+                                        <p>{{item.description}}</p>
 
-                    <div class="t1">
-                        <h3></h3>
+                                    </figcaption>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <el-pagination class="mpage" background :current-page="currentPage" :page-size="pageSize"
+                            :total="total" @current-change=page>
+                        </el-pagination>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <div class="date">
-                                    <h3>29</h3>
-                                    <p>2021-10</p>
-                                </div>
-                                <figure><img src="img/news/list1/news5.jpg">
-                                </figure>
-                                <figcaption>
-                                    <h4>高新区第一次小组会议顺利进行，会议上对近期工作了做了总结</h4>
-                                    <p>分享经验，收获成长</p>
 
-                                </figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <div class="date">
-                                    <h3>14</h3>
-                                    <p>2021-10</p>
-                                </div>
-                                <figure><img src="img/news/list1/news3.jpg">
-                                </figure>
-                                <figcaption>
-                                    <h4>据悉，中科大高新校区实验室已建成，不日即可入驻</h4>
-                                    <p>物非人是，扬帆启航</p>
-
-                                </figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <div class="date">
-                                    <h3>13</h3>
-                                    <p>2021-10</p>
-                                </div>
-                                <figure><img src="img/news/list1/news2.jpg">
-                                </figure>
-                                <figcaption>
-                                    <h4>项目组派成员参加中科大主办的人工智能与生物医药研讨会</h4>
-                                    <p>紧跟前沿，积极进取</p>
-
-                                </figcaption>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <div class="date">
-                                    <h3>07</h3>
-                                    <p>2021-10</p>
-                                </div>
-                                <figure><img src="img/news/list1/news1.jpg">
-                                </figure>
-                                <figcaption>
-                                    <h4>项目组研发部4名成员前往安徽省立医院南部医院调研</h4>
-                                    <p>红专并进，理实交融</p>
-
-                                </figcaption>
-                            </a>
-                        </li>
-
-
-
-
-                    </ul>
-                    <!-- <div class="fenye">
-						<a class='span' href='javascript:void(0);'>首页</a>
-						<a class='span' href='javascript:void(0);'>上一页</a>
-						<a href="" class="on">1</a>
-						<a href="/lists/22?page=2" title="第2页">2</a>
-						<a href="/lists/22?page=3" title="第3页">3</a>
-						<a href="/lists/22?page=4" title="第4页">4</a>
-						<a href="/lists/22?page=5" title="第5页">5</a>
-						<a class='span' href='/lists/22?page=2' title='下一页'>下一页</a>
-						<a class='span' href='/lists/22?page=5' title='尾页'>尾页</a>
-					</div> -->
                 </div>
+                <script>
+                    new Vue({
+                        el: '#app',
+                        data: {
+                            newsList: {},
+                            currentPage: 1,
+                            total: 0,
+                            pageSize: 5
+                        },
+                        methods: {
+                            page(currentPage) {
+                                const _this = this
+                                axios.get("http://8.217.44.252:8084/news?currentPage=" + currentPage).then(res => {
+                                    console.log(res)
+                                    _this.newsList = res.data.data.records
+                                    _this.currentPage = res.data.data.current
+                                    _this.total = res.data.data.total
+                                    _this.pageSize = res.data.data.size
+                                })
+                            }
+                        },
+                        created() {
+                            this.page(1)
+                        }
 
+                    })
+                </script>
             </div>
         </div>
     </div>
@@ -391,6 +369,7 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.smartmenus.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

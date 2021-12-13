@@ -1,0 +1,153 @@
+.content_left img, .news_nav img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.content_left h1, .content_left h2, .content_left h3, .content_left h4, .content_left h5, .content_left p {
+    text-align: left
+}
+
+.news_nav {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px
+}
+
+.news_nav img {
+    width: auto
+}
+
+.news_content {
+    width: 1000px;
+    margin: 0 auto 20px;
+    display: flex
+}
+
+.content_left {
+    width: 700px;
+    border-right: 1px solid #DEDEDE;
+    line-height: 36px
+}
+
+.content_left .title {
+    font: 18px "microsoft yahei","Arial Narrow",HELVETICA;
+    margin-bottom: 20px;
+}
+
+
+.content_left ul li {
+    text-align: left;
+    text-indent: 2em;
+    font-size: 14px;
+    color: #666;
+}
+
+.content_left ul li i {
+    display: inline-block;
+    margin-right: 6px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #333;
+}
+
+.content_left img {
+    width: 600px;
+    margin: 10px auto 10px
+}
+
+.content_left p {
+    font-size: 14px;
+    color: #000;
+    line-height: 26px;
+    text-indent: 2em;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.content_left .circle {
+    margin-right: 8px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #333;
+    border-radius: 50%
+}
+
+.content_left p > a {
+    color: #607fa6;
+}
+
+.content_right {
+    margin-left: 40px;
+    font-size: 14px;
+    color: #666;
+    line-height: 32px
+}
+
+.content_left.content_telleft {
+    display: none;
+}
+
+@media screen and (max-device-width: 1080px) {
+    .content_left h1, .content_left h2, .content_left h3, .content_left p {
+        text-align: left
+    }
+
+    .news_content {
+        width: 95%;
+        margin: 0 auto 20px;
+        display: flex
+    }
+
+    .news_content video {
+        width: 100%;
+    }
+
+    .content_left {
+        width: 100%;
+        border: none;
+        line-height: 36px
+    }
+
+    .content_left h2 {
+        font-size: 18px
+    }
+
+    .content_left img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 10px auto;
+    }
+
+    .content_left img.hui0502 {
+        width: 100%;
+        max-height: inherit;
+        height: auto !important;
+    }
+
+    .content_left p {
+        font-size: 16px;
+        text-indent: 2em;
+        padding-right: 0;
+    }
+
+    .content_right {
+        display: none;
+        margin-left: 40px;
+        font-size: 16px;
+        line-height: 32px
+    }
+
+    .content_left.pchidden {
+        display: none;
+    }
+
+    .content_left.content_telleft {
+        display: block;
+    }
+}
